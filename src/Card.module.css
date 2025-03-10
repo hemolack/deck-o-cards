@@ -1,0 +1,55 @@
+/* RotatingColor.module.css */
+@keyframes rotateColors {
+    0% { background-color: red; }
+    25% { background-color: yellow; }
+    50% { background-color: blue; }
+    75% { background-color: green; }
+    100% { background-color: red; }
+}
+
+@keyframes spinning {
+    0% { transform: rotate(0deg) }
+    25% { transform: rotate(90deg) }
+    50% { transform: rotate(180deg) }
+    75% { transform: rotate(270deg) }
+    100% { transform: rotate(360deg) }
+}
+
+.Card {
+    width: 60px; height: 80px;
+    padding: 5px;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.TopSuit {
+    text-align: left;
+}
+
+.BottomSuit {
+    text-align: left;
+    transform: rotate(180deg);
+}
+
+.CardValue {
+    font-size: larger;
+}
+
+.RedSuit {
+    color: red;
+}
+
+.BlackSuit {
+    color: black;
+}
+
+.JokerSuit {
+    animation: rotateColors 4s linear infinite;
+}
+
+.JokerText {
+    animation: spinning 4s linear infinite;
+    font-weight: bolder;
+}

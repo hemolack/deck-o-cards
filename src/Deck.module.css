@@ -1,0 +1,9 @@
+.CardArea {
+    float: left;
+    max-width: 300px;
+}
+
+.Container {
+    position: absolute;
+    top: 0px;
+}
