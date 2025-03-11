@@ -4,7 +4,7 @@
     "manifest_version": 1,
     "action": {
       "title": "Deck O' Cards",
-      "icon": "/icon.svg",
+      "icon": "/deck-o-cards/icon.svg",
       "popover": "/",
       "height": 600,
       "width": 400

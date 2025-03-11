@@ -18,17 +18,12 @@ const Deck = () => {
         setCards((cards) => cards.slice(1));
         setDrawn([...drawn, draw]);
         if(OBR.isAvailable && OBR.isReady) {
-            console.info('Available? ' , OBR.isAvailable);
-            console.info('Ready? ' , OBR.isReady);
             OBR.player.getName().then((result) => {
                 let playerName = result;
+                console.info(`Player ${playerName} drew ${cardMap[draw].valueName}${cardMap[draw].suitName}`);
                 // sendRemoteMessage(`${playerName} drew ${cardMap[draw].valueName ? cardMap[draw].valueName : cardMap[draw].value} ${cardMap[draw].suitName ? ' of ' + cardMap[draw].suitName : ''}`);
                 // OBR.notification.show(`${playerName} drew ${cardMap[draw].valueName ? cardMap[draw].valueName : cardMap[draw].value} ${cardMap[draw].suitName ? ' of ' + cardMap[draw].suitName : ''}`)
             })
-        }
-        else {
-            console.info('Available? ' , OBR.isAvailable);
-            console.info('Ready? ' , OBR.isReady);
         }
     }
 
