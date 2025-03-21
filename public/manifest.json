@@ -1,7 +1,10 @@
 {
     "name": "Deck O' Cards",
+    "description": "A deck of cards (with Jokers) suitable for use with the Savage Worlds system",
     "version": "1.0.0",
     "manifest_version": 1,
+    "icon": "/icon.svg",
+    "author": "Data Vikings Technology Group",
     "action": {
       "title": "Deck O' Cards",
       "icon": "/icon.svg",
