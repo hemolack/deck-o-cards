@@ -20,10 +20,13 @@ const Card = (props) => {
         classList.push(classes.BlackSuit);
     }
     return (
-        <div className={classList.join(' ')}>
-            <div className={classes.TopSuit}>{thisCard.suit}</div>
-            <div className={classes.CardValue + ' ' + spinClass}>{thisCard.value}</div>
-            <div className={classes.BottomSuit}>{thisCard.suit}</div>
+        <div className={classes.CardContainer}>
+            <div className={classes.PlayerName}>{props.player}</div>
+            <div className={classList.join(' ')}>
+                <div className={classes.TopSuit}>{thisCard.suit}</div>
+                <div className={classes.CardValue + ' ' + spinClass}>{thisCard.value}</div>
+                <div className={classes.BottomSuit}>{thisCard.suit}</div>
+            </div>
         </div>
     )
 }
